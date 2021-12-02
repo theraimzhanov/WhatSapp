@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#22aa2222"
+            android:padding="8dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textViewAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                app:layout_constraintEnd_toStartOf="@id/image_profile"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Автор" />
+
+            <TextView
+                android:id="@+id/textViewTextOfMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:layout_marginRight="12dp"
+                app:layout_constraintEnd_toStartOf="@id/image_profile"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAuthor"
+                tools:text="Текст сообщения" />
+
+            <ImageView
+                android:id="@+id/imageViewImage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@id/image_profile"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

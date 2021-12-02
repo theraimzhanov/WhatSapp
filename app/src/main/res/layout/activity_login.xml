@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/loginimage"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@id/layout_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:src="@drawable/logologin" />
+    <TextView
+        android:id="@+id/textSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        app:layout_constraintStart_toEndOf="@id/imageLogin"
+        app:layout_constraintTop_toTopOf="@id/imageLogin"
+        app:layout_constraintBottom_toBottomOf="@id/imageLogin"
+        android:layout_marginStart="20sp"
+        android:layout_marginBottom="20dp"
+        android:textSize="40sp"
+        android:textColor="#1873BC" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textSignIn"
+        app:layout_constraintStart_toStartOf="@id/textSignIn"
+         android:text="Sign in to your Registred account..."
+        android:textSize="18sp"
+        android:textColor="#ABC8C8"
+        />
+
+<LinearLayout
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/ettex_shape"
+        android:padding="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Введите ваш email:"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ettex_shape"
+        android:padding="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:textColorHint="@color/white"
+        android:hint="Введите ваш пароль:"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="Вход"
+        android:onClick="onClickLogin" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/white"
+        android:text="Регистрация" />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

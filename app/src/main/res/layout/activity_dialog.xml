@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diolog"
+    android:layout_margin="3dp"
+    tools:context=".ui.DialogActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutProfileChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#331C1C"
+       android:layout_margin="2dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btBackDialog"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+             android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialogImageViewInChat"
+            android:layout_width="50dp"
+            android:layout_marginStart="20sp"
+            android:layout_height="50dp"
+            android:src="@drawable/userprofile"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/chatNameDiolog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Raimzhanov Nursultan"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChatDiolog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/laYoutText"
+        android:layout_below="@id/layoutProfileChat" />
+
+    <LinearLayout
+        android:id="@+id/laYoutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageViewAddImageDialog"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_gravity="start"
+            android:background="@drawable/image" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#BF9FC5"
+            app:cardCornerRadius="540dp">
+
+            <EditText
+                android:id="@+id/ettextMessageDiolog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center_vertical"
+                android:hint="Type your message..." />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSendDiolog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="@color/teal_200"
+            app:cardCornerRadius="540dp">
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_send" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

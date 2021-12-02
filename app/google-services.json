@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "781419907899",
+    "project_id": "chatmessage-27950",
+    "storage_bucket": "chatmessage-27950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781419907899:android:40920fbf583117fc94851e",
+        "android_client_info": {
+          "package_name": "com.example.chatmessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781419907899-9upuep3gqkm531642cp0no59rdc4bgkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyPfpxjGGr54er9nbJelEFZwMLoCfXKAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781419907899-9upuep3gqkm531642cp0no59rdc4bgkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
